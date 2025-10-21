@@ -1,5 +1,5 @@
 # .files
-![Setup example](.repo_asssets/setup.png)
+![Setup example](.repo_assets/setup.png)
 
 dotfiles for my laptop
 
