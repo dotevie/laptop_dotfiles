@@ -1,0 +1,4 @@
+/* ffffffucking FIREFOX */
+:root:not([chromehidden~="toolbar"]){
+  min-width: 250px !important;
+}

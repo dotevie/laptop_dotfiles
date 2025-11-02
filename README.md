@@ -18,3 +18,4 @@ if you have something that's not the laptop i have you'll probably need to chang
 - music player: kew
 - fetch thing(??): nerdfetch
 - wallpaper: from [David Revoy](https://framapiaf.org/@davidrevoy/110519900449848982)
+- `userChrome.css` file inside `firefox_css` lowers minimum firefox width in order to make 33% look fine
