@@ -14,7 +14,8 @@ if you have something that's not the laptop i have you'll probably need to chang
 
 ### how to install (more or less)
 - when installing danklinux, make sure to select niri as your window manager and ghostty as your terminal
-- copy `DankMaterialShell`, `fastfetch`, `ghostty`, `niri`, `hyfetch.json`, and `quickshell` into your `.config` folder (make sure to make backups)
+- copy `DankMaterialShell`, `fastfetch`, `ghostty`, `niri`, `hyfetch.json`, and `quickshell` into your `$XDG_CONFIG_HOME` folder (make sure to make backups)
+- if you're ok with having a bit of clutter in that folder you can just clone it in directly (e.g. `git clone https://github.com/dotevie.com/laptop_dotfiles $XDG_CONFIG_HOME`)
 - copy `userChrome.css` in `firefox_css` folder into the `chrome` folder in your Firefox userprofile directory (make sure stylesheets are enabled)
 
 
