@@ -14,8 +14,10 @@ if you have something that's not the laptop i have you'll probably need to chang
 
 ### extra things:
 - laptop: 14 inch macbook pro 2021
-- OS: Fedora Asahi Remix 42 (with notched area rendering enabled)
-- music player: kew
-- fetch thing(??): nerdfetch
+- OS: Fedora Workstation Asahi Remix 43 (with notched area rendering enabled)
+- shell: DankMaterialShell
+- music player: Gapless
+- fetch thing(??): hyfetch + fastfetch
+- browser: Zen
 - wallpaper: from [David Revoy](https://framapiaf.org/@davidrevoy/110519900449848982)
 - `userChrome.css` file inside `firefox_css` lowers minimum firefox width in order to make 33% look fine
