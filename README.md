@@ -12,6 +12,12 @@ required:
 
 if you have something that's not the laptop i have you'll probably need to change the display settings in `niri/config.kdl`
 
+### how to install (more or less)
+- when installing danklinux, make sure to select niri as your window manager and ghostty as your terminal
+- copy `DankMaterialShell`, `fastfetch`, `ghostty`, `niri`, `hyfetch.json`, and `quickshell` into your `.config` folder (make sure to make backups)
+- copy `userChrome.css` in `firefox_css` folder into the `chrome` folder in your Firefox userprofile directory (make sure stylesheets are enabled)
+
+
 ### extra things:
 - laptop: 14 inch macbook pro 2021
 - OS: Fedora Workstation Asahi Remix 43 (with notched area rendering enabled)
