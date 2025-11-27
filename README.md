@@ -17,6 +17,7 @@ if you have something that's not the laptop i have you'll probably need to chang
 - copy `DankMaterialShell`, `fastfetch`, `ghostty`, `niri`, `hyfetch.json`, and `quickshell` into your `$XDG_CONFIG_HOME` folder (make sure to make backups)
 - if you're ok with having a bit of clutter in that folder you can just clone it in directly (e.g. `git clone https://github.com/dotevie.com/laptop_dotfiles $XDG_CONFIG_HOME`)
 - copy `userChrome.css` in `firefox_css` folder into the `chrome` folder in your Firefox userprofile directory (make sure stylesheets are enabled)
+- set your wallpaper to `wallpaper.png` if you like :3
 
 
 ### extra things:
@@ -26,5 +27,5 @@ if you have something that's not the laptop i have you'll probably need to chang
 - music player: Gapless
 - fetch thing(??): hyfetch + fastfetch
 - browser: Zen
-- wallpaper: from [David Revoy](https://framapiaf.org/@davidrevoy/110519900449848982)
+- wallpaper: made with art from [@d6016.bsky.social](https://bsky.app/profile/d6016.bsky.social/post/3lcgyu6fohc2b)
 - `userChrome.css` file inside `firefox_css` lowers minimum firefox width in order to make 33% look fine
