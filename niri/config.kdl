@@ -76,9 +76,7 @@ input {
 layout {
     // Set gaps around windows in logical pixels.
     // i had fancier math but it looks The Same with an int x3
-    gaps 6
-    //gaps 0
-    // approx. corner radius / 6, looks p nice and fixes the weird  
+    gaps 6 
     background-color "transparent"
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
