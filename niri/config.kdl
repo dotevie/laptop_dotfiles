@@ -6,19 +6,9 @@ include "components/outputs.kdl"
 
 include "components/input.kdl"
 
-include "dms/layout.kdl"
-
-include "dms/colors.kdl"
-
 include "components/environment.kdl"
 
 include "components/animations.kdl"
-
-include "dms/binds.kdl"
-
-include "dms/alttab.kdl"
-
-include "dms/wpblur.kdl"
 
 include "components/layout.kdl"
 
@@ -27,3 +17,15 @@ include "components/alttab.kdl"
 include "components/cursor.kdl"
 
 include "components/rules.kdl"
+
+include "dms/layout.kdl"
+
+include "dms/colors.kdl"
+
+include "components/color-overrides.kdl"
+
+include "dms/binds.kdl"
+
+include "dms/alttab.kdl"
+
+include "dms/wpblur.kdl"
