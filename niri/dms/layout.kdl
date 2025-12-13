@@ -9,7 +9,6 @@ layout {
         width 2
     }
 }
-
 window-rule {
     geometry-corner-radius 18.5
     clip-to-geometry true

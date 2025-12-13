@@ -1,0 +1,16 @@
+layout {
+    background-color "transparent"
+    center-focused-column "never"
+    default-column-width { proportion 0.5; }
+    preset-column-widths {
+        proportion 0.334
+        proportion 0.50
+        proportion 0.6666667
+    }
+    shadow {
+      softness 30
+      spread 5
+      offset x=0 y=59
+      color "#0007"
+    }
+}
