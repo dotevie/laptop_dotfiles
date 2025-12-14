@@ -12,7 +12,6 @@ window-rule {
 window-rule {
     match app-id=r#"^org\.gnome\."#
     draw-border-with-background false
-    geometry-corner-radius 18.5
     clip-to-geometry true
 }
 window-rule {
@@ -50,4 +49,8 @@ window-rule {
 window-rule {
 	match app-id="emote"
 	default-floating-position x=24 y=24 relative-to="bottom-right"
+}
+window-rule {
+    match app-id=r#"org.quickshell$"#
+    open-floating true
 }

@@ -1,0 +1,11 @@
+recent-windows {
+	open-delay-ms 100
+	highlight {
+		active-color "#9bd595"
+		padding 18.5
+	}
+
+	previews {
+		max-height 982
+	}
+}
