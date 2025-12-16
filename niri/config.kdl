@@ -15,6 +15,13 @@
 */
 
 /*
+    plays a startup sound.
+    looks in /usr/share/sounds/modern-minimal-ui-sounds-v1.1/stereo/desktop-login.oga
+    download what i used from https://www.gnome-look.org/p/2225430
+*/
+include "components/startup-sound.kdl"
+
+/*
     this is where your shell environment variables go.
     anything shell-specific that doesn't live in your rc files should go here.
 */
@@ -73,7 +80,6 @@ include "components/binds.kdl"
 /*
     this is where miscellaneous things are.
     if you aren't sure where something should go (or it doesn't fit cleanly into another file), this isn't a bad place.
-    
 */
 include "components/miscellaneous.kdl"
 
