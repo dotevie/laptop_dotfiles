@@ -54,3 +54,10 @@ window-rule {
     match app-id=r#"org.quickshell$"#
     open-floating true
 }
+window-rule {
+    match app-id="com.nextcloud.desktopclient.nextcloud"
+    open-floating true
+    default-column-width { fixed 480; }
+    default-window-height { fixed 640; }
+    default-floating-position x=6 y=6 relative-to="top-right"
+}

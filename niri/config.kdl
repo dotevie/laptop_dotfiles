@@ -33,12 +33,14 @@ include "components/environment.kdl"
 */
 include "components/spawns.kdl"
 
+include "dms/outputs.kdl"
+
 /*
     this is where rules for screen outputs go (e.g. scale, resolution, refresh rate, etc).
     if you need to configure, add, or change any outputs, this is where to do that.
     if you don't have the same laptop as me, you will need to do this.
 */
-include "components/outputs.kdl"
+include "components/outputs-override.kdl"
 
 /*
     this is where input device configuration lives.

@@ -7,8 +7,16 @@ refined specifically for my laptop [14 inch macbook pro]
 
 required:
 - [niri](https://github.com/yalter/niri) ^v25.11
-- [danklinux dotfile setup](https://danklinux.com)
+- [danklinux dotfile setup](https://danklinux.com) (DMS ^v1.2)
 - [Bibata Modern Classic cursor](https://store.kde.org/p/1914825) wherever you store your cursors
+
+recommended for all keybinds to work:
+- hyprpicker
+- zsh
+- [Emote](https://flathub.org/en/apps/com.tomjwatson.Emote) emoji picker Flatpak
+- wl-copy and wl-paste
+- notify-send
+- playerctl
 
 if you have something that's not the laptop i have you'll probably need to change the display settings in `niri/config.kdl`
 
@@ -17,6 +25,7 @@ if you have something that's not the laptop i have you'll probably need to chang
 - copy `DankMaterialShell`, `fastfetch`, `ghostty`, `niri`, `hyfetch.json`, and `quickshell` into your `$XDG_CONFIG_HOME` folder (make sure to make backups)
 - if you're ok with having a bit of clutter in that folder you can just clone it in directly (e.g. `git clone https://github.com/dotevie.com/laptop_dotfiles $XDG_CONFIG_HOME`)
 - copy `userChrome.css` in `firefox_css` folder into the `chrome` folder in your Firefox userprofile directory (make sure stylesheets are enabled)
+- copy the scripts in `scripts` to `~/.local/bin` or wherever you like
 - set your wallpaper to `wallpaper.png` if you like :3
 
 

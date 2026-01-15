@@ -1,0 +1,2 @@
+#!/bin/zsh
+hyprpicker | tr -d "\n" | wl-copy && notify-send "Color Copied" "Color "$(wl-paste)" copied to clipboard"
