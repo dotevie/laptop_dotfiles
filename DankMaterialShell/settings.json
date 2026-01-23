@@ -6,7 +6,7 @@
   "matugenScheme": "scheme-expressive",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 0.85,
+  "popupTransparency": 0.8,
   "dockTransparency": 0.75,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
@@ -25,10 +25,10 @@
   "useFahrenheit": true,
   "nightModeEnabled": false,
   "animationSpeed": 2,
-  "customAnimationDuration": 0,
+  "customAnimationDuration": 500,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
-  "blurWallpaperOnOverview": false,
+  "blurWallpaperOnOverview": true,
   "showLauncherButton": true,
   "showWorkspaceSwitcher": true,
   "showFocusedWindow": true,
@@ -58,6 +58,7 @@
   "controlCenterShowMicPercent": false,
   "controlCenterShowBatteryIcon": false,
   "controlCenterShowPrinterIcon": false,
+  "controlCenterShowScreenSharingIcon": true,
   "showPrivacyButton": true,
   "privacyShowMicIcon": false,
   "privacyShowCameraIcon": false,
@@ -160,7 +161,7 @@
       "type": "regex"
     }
   ],
-  "centeringMode": "index",
+  "centeringMode": "geometric",
   "clockDateFormat": "ddd MMM d",
   "lockDateFormat": "",
   "mediaSize": 1,
@@ -170,13 +171,13 @@
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
   "niriOverviewOverlayEnabled": true,
-  "useAutoLocation": true,
+  "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "wifi",
   "vpnLastConnected": "",
   "iconTheme": "Adwaita",
   "cursorSettings": {
-    "theme": "System Default",
+    "theme": "Bibata-Modern-Classic",
     "size": 24,
     "niri": {
       "hideWhenTyping": false,
@@ -192,16 +193,16 @@
     }
   },
   "launcherLogoMode": "os",
-  "launcherLogoCustomPath": "/home/evelyn/Downloads/Group 1(3).svg",
+  "launcherLogoCustomPath": "",
   "launcherLogoColorOverride": "primary",
   "launcherLogoColorInvertOnMode": false,
-  "launcherLogoBrightness": 0.49,
-  "launcherLogoContrast": 0,
-  "launcherLogoSizeOffset": 0,
+  "launcherLogoBrightness": 0.5,
+  "launcherLogoContrast": 1,
+  "launcherLogoSizeOffset": -4,
   "fontFamily": "Inter Variable",
   "monoFontFamily": "Fira Code",
-  "fontWeight": 700,
-  "fontScale": 1.1,
+  "fontWeight": 400,
+  "fontScale": 1.21,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
@@ -214,8 +215,8 @@
   "soundVolumeChanged": true,
   "soundPluggedIn": true,
   "acMonitorTimeout": 0,
-  "acLockTimeout": 900,
-  "acSuspendTimeout": 1800,
+  "acLockTimeout": 0,
+  "acSuspendTimeout": 0,
   "acSuspendBehavior": 0,
   "acProfileName": "",
   "batteryMonitorTimeout": 0,
@@ -245,12 +246,12 @@
   "runDmsMatugenTemplates": true,
   "matugenTemplateGtk": true,
   "matugenTemplateNiri": true,
-  "matugenTemplateHyprland": true,
-  "matugenTemplateMangowc": true,
+  "matugenTemplateHyprland": false,
+  "matugenTemplateMangowc": false,
   "matugenTemplateQt5ct": true,
   "matugenTemplateQt6ct": true,
-  "matugenTemplateFirefox": true,
-  "matugenTemplatePywalfox": true,
+  "matugenTemplateFirefox": false,
+  "matugenTemplatePywalfox": false,
   "matugenTemplateZenBrowser": true,
   "matugenTemplateVesktop": true,
   "matugenTemplateEquibop": true,
@@ -270,13 +271,13 @@
   "dockPosition": 1,
   "dockSpacing": 12,
   "dockBottomGap": 0,
-  "dockMargin": 6,
+  "dockMargin": 12,
   "dockIconSize": 48,
   "dockIndicatorStyle": "line",
   "dockBorderEnabled": false,
-  "dockBorderColor": "surfaceText",
+  "dockBorderColor": "primary",
   "dockBorderOpacity": 1,
-  "dockBorderThickness": 1,
+  "dockBorderThickness": 2,
   "dockIsolateDisplays": false,
   "notificationOverlayEnabled": true,
   "modalDarkenBackground": true,
@@ -311,7 +312,7 @@
   "osdIdleInhibitorEnabled": true,
   "osdMicMuteEnabled": true,
   "osdCapsLockEnabled": true,
-  "osdPowerProfileEnabled": true,
+  "osdPowerProfileEnabled": false,
   "osdAudioOutputEnabled": true,
   "powerActionConfirm": true,
   "powerActionHoldDuration": 0.5,
@@ -333,14 +334,10 @@
   "customPowerActionPowerOff": "",
   "updaterHideWidget": false,
   "updaterUseCustomCommand": false,
-  "updaterCustomCommand": "dnf",
+  "updaterCustomCommand": "",
   "updaterTerminalAdditionalParams": "",
   "displayNameMode": "system",
-  "screenPreferences": {
-    "wallpaper": [
-      "all"
-    ]
-  },
+  "screenPreferences": {},
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {},
@@ -352,33 +349,55 @@
       "position": 0,
       "screenPreferences": [
         {
-          "name": "eDP-1",
-          "model": "Unknown"
+          "name": "DP-1",
+          "model": "LS32CG51x"
         }
       ],
-      "showOnLastDisplay": false,
+      "showOnLastDisplay": true,
       "leftWidgets": [
-        {
-          "id": "launcherButton",
-          "enabled": true
-        },
         {
           "id": "workspaceSwitcher",
           "enabled": true
         },
         {
-          "id": "weather",
+          "id": "separator",
           "enabled": true
         },
         {
           "id": "music",
+          "enabled": true,
+          "mediaSize": 3
+        }
+      ],
+      "centerWidgets": [
+        {
+          "id": "clock",
+          "enabled": true
+        },
+        {
+          "id": "separator",
+          "enabled": true
+        },
+        {
+          "id": "weather",
           "enabled": true
         }
       ],
-      "centerWidgets": [],
       "rightWidgets": [
         {
+          "id": "systemUpdate",
+          "enabled": true
+        },
+        {
+          "id": "separator",
+          "enabled": true
+        },
+        {
           "id": "systemTray",
+          "enabled": true
+        },
+        {
+          "id": "separator",
           "enabled": true
         },
         {
@@ -386,15 +405,15 @@
           "enabled": true
         },
         {
+          "id": "separator",
+          "enabled": true
+        },
+        {
           "id": "notificationButton",
           "enabled": true
         },
         {
-          "id": "battery",
-          "enabled": true
-        },
-        {
-          "id": "clock",
+          "id": "separator",
           "enabled": true
         },
         {
@@ -403,63 +422,31 @@
         }
       ],
       "spacing": 0,
-      "innerPadding": 2,
-      "bottomGap": -0.5,
+      "innerPadding": 4,
+      "bottomGap": 0,
       "transparency": 0,
-      "widgetTransparency": 0.5,
+      "widgetTransparency": 0,
       "squareCorners": true,
       "noBackground": false,
       "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
-      "gothCornerRadiusValue": 12,
+      "gothCornerRadiusValue": 18.5,
       "borderEnabled": false,
       "borderColor": "surfaceText",
       "borderOpacity": 1,
       "borderThickness": 1,
-      "fontScale": 0.9999999999999991,
-      "autoHide": false,
-      "autoHideDelay": 250,
-      "openOnOverview": true,
-      "visible": true,
-      "popupGapsAuto": true,
-      "popupGapsManual": 50
-    },
-    {
-      "id": "bar1765747759131",
-      "name": "Bar 2",
-      "enabled": true,
-      "position": 0,
-      "screenPreferences": [],
-      "showOnLastDisplay": false,
-      "leftWidgets": [],
-      "centerWidgets": [],
-      "rightWidgets": [],
-      "spacing": 0,
-      "innerPadding": 2,
-      "bottomGap": -0.5,
-      "transparency": 0,
-      "widgetTransparency": 0.5,
-      "squareCorners": true,
-      "noBackground": false,
-      "gothCornersEnabled": true,
-      "gothCornerRadiusOverride": false,
-      "gothCornerRadiusValue": 12,
-      "borderEnabled": false,
-      "borderColor": "surfaceText",
-      "borderOpacity": 1,
-      "borderThickness": 1,
-      "widgetOutlineEnabled": false,
-      "widgetOutlineColor": "primary",
-      "widgetOutlineOpacity": 1,
-      "widgetOutlineThickness": 1,
-      "fontScale": 0.9999999999999991,
+      "fontScale": 1,
       "autoHide": false,
       "autoHideDelay": 250,
       "openOnOverview": true,
       "visible": true,
       "popupGapsAuto": true,
       "popupGapsManual": 50,
-      "maximizeDetection": true
+      "shadowColorMode": "surface",
+      "shadowIntensity": 0,
+      "widgetOutlineEnabled": false,
+      "widgetOutlineThickness": 2,
+      "scrollXBehavior": "none"
     }
   ],
   "desktopClockEnabled": false,
@@ -530,12 +517,7 @@
   ],
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
-  "desktopWidgetGridSettings": {
-    "eDP-1": {
-      "enabled": true,
-      "size": 10
-    }
-  },
+  "desktopWidgetGridSettings": {},
   "desktopWidgetInstances": [],
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {},

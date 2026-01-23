@@ -1,0 +1,24 @@
+{
+  "commandRunner": {
+    "enabled": true,
+    "terminal": "ghostty",
+    "history": [
+      "git clone https://github.com/dotevie/laptop_dotfiles ~/gitrepos/laptop_dotfiles",
+      "weston"
+    ]
+  },
+  "webSearch": {
+    "enabled": true,
+    "searchEngines": [
+      {
+        "id": "startpage",
+        "name": "Startpage",
+        "icon": "unicode:",
+        "url": "https://startpage.com/sp/search?query=%s",
+        "keywords": [
+          "s"
+        ]
+      }
+    ]
+  }
+}
