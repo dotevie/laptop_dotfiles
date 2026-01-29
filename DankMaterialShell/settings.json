@@ -201,7 +201,7 @@
   "launcherLogoSizeOffset": -4,
   "fontFamily": "Inter Variable",
   "monoFontFamily": "Fira Code",
-  "fontWeight": 400,
+  "fontWeight": 500,
   "fontScale": 1.21,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
@@ -235,7 +235,7 @@
   "brightnessDevicePins": {},
   "wifiNetworkPins": {},
   "bluetoothDevicePins": {
-    "preferredDevice": "3C:B0:ED:B6:35:F2"
+    "preferredDevice": "AC:07:75:A8:55:61"
   },
   "audioInputDevicePins": {},
   "audioOutputDevicePins": {},
@@ -291,7 +291,7 @@
   "maxFprintTries": 3,
   "lockScreenActiveMonitor": "all",
   "lockScreenInactiveColor": "#000000",
-  "lockScreenNotificationMode": 0,
+  "lockScreenNotificationMode": 2,
   "hideBrightnessSlider": false,
   "notificationTimeoutLow": 5000,
   "notificationTimeoutNormal": 5000,
@@ -351,9 +351,13 @@
         {
           "name": "DP-1",
           "model": "LS32CG51x"
+        },
+        {
+          "name": "eDP-1",
+          "model": "Unknown"
         }
       ],
-      "showOnLastDisplay": true,
+      "showOnLastDisplay": false,
       "leftWidgets": [
         {
           "id": "workspaceSwitcher",
@@ -364,34 +368,21 @@
           "enabled": true
         },
         {
-          "id": "music",
-          "enabled": true,
-          "mediaSize": 3
-        }
-      ],
-      "centerWidgets": [
-        {
-          "id": "clock",
-          "enabled": true
-        },
-        {
-          "id": "separator",
-          "enabled": true
-        },
-        {
           "id": "weather",
           "enabled": true
-        }
-      ],
-      "rightWidgets": [
-        {
-          "id": "systemUpdate",
-          "enabled": true
         },
         {
           "id": "separator",
           "enabled": true
         },
+        {
+          "id": "music",
+          "enabled": true,
+          "mediaSize": 2
+        }
+      ],
+      "centerWidgets": [],
+      "rightWidgets": [
         {
           "id": "systemTray",
           "enabled": true
@@ -410,6 +401,22 @@
         },
         {
           "id": "notificationButton",
+          "enabled": true
+        },
+        {
+          "id": "separator",
+          "enabled": true
+        },
+        {
+          "id": "battery",
+          "enabled": true
+        },
+        {
+          "id": "separator",
+          "enabled": true
+        },
+        {
+          "id": "clock",
           "enabled": true
         },
         {
@@ -446,7 +453,9 @@
       "shadowIntensity": 0,
       "widgetOutlineEnabled": false,
       "widgetOutlineThickness": 2,
-      "scrollXBehavior": "none"
+      "scrollXBehavior": "none",
+      "shadowOpacity": 49,
+      "widgetOutlineOpacity": 0.15
     }
   ],
   "desktopClockEnabled": false,
