@@ -8,7 +8,7 @@ refined specifically for my laptop [14 inch macbook pro]
 required:
 - [niri](https://github.com/yalter/niri) ^v25.11
 - [danklinux dotfile setup](https://danklinux.com) (DMS ^v1.2)
-- [Bibata Modern Classic cursor](https://store.kde.org/p/1914825) wherever you store your cursors
+- [Bibata Modern Classic cursor](https://store.kde.org/p/1914825) wherever you store your cursors (e.g `~/.local/share/icons`)
 
 recommended for all keybinds to work:
 - hyprpicker
