@@ -1,0 +1,9 @@
+#!/bin/zsh
+# idk if it works on other shells but i know Z shell syntax
+# XDG_CURRENT_DESKTOP is "GNOME" on gnome 48 but im gonna keep the regex in case some different version uses some different capitalization
+# i *think* this is the right regex, even though it looks Stupid
+if [[ ! "$XDG_CURRENT_DESKTOP" =~ ^([Gg][Nn][Oo][Mm][Ee])$ ]]; then
+	zenity --info --title="GNOME Settings" --text="This is the settings app for GNOME. Many settings likely won't work on your current desktop." 2> /dev/null && XDG_CURRENT_DESKTOP=GNOME gnome-control-center
+else
+	gnome-control-center
+fi
