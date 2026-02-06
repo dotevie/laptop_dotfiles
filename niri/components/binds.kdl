@@ -1,7 +1,8 @@
 binds {
         // === System & Overview ===
-    Mod+D hotkey-overlay-title="Toggle niri Overview" { spawn "niri" "msg" "action" "toggle-overview"; }
-	XF86LaunchA hotkey-overlay-title="Toggle niri Overview" { spawn "niri" "msg" "action" "toggle-overview"; }
+    Mod+D repeat=false hotkey-overlay-title="Toggle niri Overview" { toggle-overview; }
+	// macbook overview key, on F3
+	XF86LaunchA repeat=false hotkey-overlay-title="Toggle niri Overview" { toggle-overview; }
     Mod+O repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
     
@@ -10,7 +11,8 @@ binds {
     Mod+Z hotkey-overlay-title="Open Zen Browser" { spawn "zen"; } 
     Mod+E hotkey-overlay-title="Open Emoji Picker" { spawn "flatpak" "run" "com.tomjwatson.Emote"; }
     Mod+Shift+C hotkey-overlay-title="Open Color Picker" { spawn "colorpicker"; }
-
+	
+	// spawn nkill, for killing unresponsive windows
 	Mod+Shift+Escape { spawn "nkill"; }
     
     // === Window Management ===
@@ -152,6 +154,7 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+P { power-off-monitors; }
 
+	// for audio keys and airpods, should work with like everything?
     XF86AudioPlay { spawn "playerctl" "play-pause"; }
     XF86AudioPrev { spawn "playerctl" "previous"; }
     XF86AudioNext { spawn "playerctl" "next"; }
