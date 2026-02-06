@@ -1,0 +1,6 @@
+#!/bin/zsh
+if [[ "$XDG_CURRENT_DESKTOP" != "niri" ]] then
+	echo "nkill only works on niri"
+	return 1
+fi
+kill $(niri msg -j pick-window | jq '.pid')
