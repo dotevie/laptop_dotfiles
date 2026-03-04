@@ -61,3 +61,8 @@ window-rule {
     default-window-height { fixed 640; }
     default-floating-position x=6 y=6 relative-to="top-right"
 }
+window-rule {
+	match app-id="ca.icewolf.tapshow"
+	default-floating-position x=6 y=6 relative-to="top-left"
+	geometry-corner-radius 0
+}

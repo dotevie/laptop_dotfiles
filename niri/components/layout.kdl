@@ -1,6 +1,7 @@
 layout {
     background-color "transparent"
     center-focused-column "never"
+	always-center-single-column
     default-column-width { proportion 0.5; }
     preset-column-widths {
         proportion 0.334
@@ -8,9 +9,11 @@ layout {
         proportion 0.6666667
     }
     shadow {
+	  on
       softness 30
-      spread 5
-      offset x=0 y=59
-      color "#0007"
+      spread 100
+      offset x=0 y=0
+      //color "#ff9bd595"
+	  color "transparent"
     }
 }

@@ -17,12 +17,12 @@ binds {
     
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
-    Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
-    Mod+Alt+F { maximize-window-to-edges; }
-    Mod+Shift+T { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
-    Mod+W { toggle-column-tabbed-display; }
+    Mod+F repeat=false { maximize-column; }
+    Mod+Shift+F repeat=false { fullscreen-window; }
+    Mod+Alt+F repeat=false { maximize-window-to-edges; }
+    Mod+Shift+T repeat=false { toggle-window-floating; }
+    Mod+Shift+V repeat=false { switch-focus-between-floating-and-tiling; }
+    Mod+W repeat=false { toggle-column-tabbed-display; }
     
     // === Focus Navigation ===
     Mod+Left  { focus-column-left; }

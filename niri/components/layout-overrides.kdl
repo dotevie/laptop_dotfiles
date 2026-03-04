@@ -1,3 +1,14 @@
 layout {
-    gaps 6
+    gaps 9
+	focus-ring {
+	  //width 1
+	}
+    shadow {
+	  off
+      softness 10
+      spread 3
+      offset x=0 y=0
+      color "#9bd59580"
+	  inactive-color "transparent"
+    }
 }

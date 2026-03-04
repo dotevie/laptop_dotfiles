@@ -138,5 +138,3 @@ include "components/alttab-overrides.kdl"
     you should never need to touch this.
 */
 include "dms/wpblur.kdl"
-
-include "dms/windowrules.kdl"
