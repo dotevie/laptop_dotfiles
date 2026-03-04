@@ -18,7 +18,10 @@ recommended for all keybinds to work:
 - notify-send
 - playerctl
 
-if you have something that's not the laptop i have you'll probably need to change the display settings in `niri/config.kdl`
+if you have something that's not the laptop i have you'll probably need to change the display settings. as of late you should just be able to do this in niri
+
+### icon pack (wip)
+i'm working on an icon pack for all the apps i use regularly. if you'd like to download them for use on your own system, you can access them [here](https://www.figma.com/design/qJG0yo15zWKf12Md6LFWJJ/mycons?node-id=0-1&t=FxKJavxTBZunUTlH-1). i export them as 960px pngs (due to using a lot of complex SVG things i'm not sure if niri can render) and they scale down nicely to 96px on the dock.
 
 ### how to install (more or less)
 - when installing danklinux, make sure to select niri as your window manager and ghostty as your terminal
