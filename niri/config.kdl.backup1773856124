@@ -33,10 +33,6 @@ include "components/environment.kdl"
 */
 include "components/spawns.kdl"
 
-/*
-	DMS outputs, managed from the settings menu
-	do not touch, will be overwritten.
-*/
 include "dms/outputs.kdl"
 
 /*
@@ -65,6 +61,14 @@ include "components/animations.kdl"
 include "components/layout.kdl"
 
 /*
+    this is where the Xcursor config is.
+    if you install a different cursor and want to change it to that, change "xcursor-theme".
+*/
+include "components/cursor.kdl"
+
+
+
+/*
     these are the niri system keybinds.
     anything declared here can be overridden in DMS, but you can also change them here instead if you like.
 */
@@ -79,7 +83,7 @@ include "components/miscellaneous.kdl"
 /*
     DMS layout configuration.
     configures things like corner radii.
-	don't touch this, any changes will be overwritten.
+    not recommended to touch.
 */
 include "dms/layout.kdl"
 
@@ -94,7 +98,7 @@ include "components/rules.kdl"
 /*
     DMS color configuration.
     configures border and highlight colors based on your wallpaper.
-	don't touch this, any changes will be overwritten.
+    not recommended to touch.
 */
 include "dms/colors.kdl"
 
@@ -113,14 +117,14 @@ include "components/layout-overrides.kdl"
 /*
     DMS binds configuration.
     any binds configured or overwritten in the GUI live here.
-    despite the warning, should be fine to touch, just make sure you restart DMS (power menu + D) if you do.
+    despite the warning, should be fine to touch, but i recommend restarting DMS after if you do.
 */
 include "dms/binds.kdl"
 
 /*
     DMS alt+tab picker configuration.
     sets corner radii on the alt+tab picker.
-    don't touch this, any changes will be overwritten
+    not recommended to touch.
 */
 include "dms/alttab.kdl"
 
@@ -133,18 +137,8 @@ include "components/alttab-overrides.kdl"
 /*
     DMS wallpaper blur configuration.
     places the blurred wallpaper in the backdrop if you enable it in the GUI.
-	don't touch this, any changes will be overwritten
+    you should never need to touch this.
 */
 include "dms/wpblur.kdl"
 
-/*
-	DMS window rule configuration, managed in the settings menu
-	not recommended to touch, if you want to write your own window rules in text, do it in components/rules.kdl
-*/
 include "dms/windowrules.kdl"
-
-/*
-	DMS Xcursor configuration, managed in the settings menu
-	don't touch this, any changes will be overwritten
-*/
-include "dms/cursor.kdl"

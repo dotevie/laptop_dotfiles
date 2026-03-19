@@ -17,6 +17,7 @@ recommended for all keybinds to work:
 - wl-copy and wl-paste
 - notify-send
 - playerctl
+- systemd/logind
 
 if you have something that's not the laptop i have you'll probably need to change the display settings. as of late you should just be able to do this in niri
 
@@ -25,16 +26,17 @@ i'm working on an icon pack for all the apps i use regularly. if you'd like to d
 
 ### how to install (more or less)
 - when installing danklinux, make sure to select niri as your window manager and ghostty as your terminal
-- copy `DankMaterialShell`, `fastfetch`, `ghostty`, `niri`, `hyfetch.json`, and `quickshell` into your `$XDG_CONFIG_HOME` folder (make sure to make backups)
-- if you're ok with having a bit of clutter in that folder you can just clone it in directly (e.g. `git clone https://github.com/dotevie.com/laptop_dotfiles $XDG_CONFIG_HOME`)
+- copy `DankMaterialShell`, `fastfetch`, `niri`, and `hyfetch.json`into your `$XDG_CONFIG_HOME` folder
 - copy `userChrome.css` in `firefox_css` folder into the `chrome` folder in your Firefox userprofile directory (make sure stylesheets are enabled)
 - copy the scripts in `scripts` to `~/.local/bin` or wherever you like
+- add `appledrm.show_notch=1` to your kargs to enable notched rendering
+- !!! important for sleep key function like in macos !!!: copy `/usr/lib/systemd/logind.conf` to `/etc/systemd/logind.conf`, uncomment `HandleSuspendKey`, and set it to `ignore`, then reboot
 - set your wallpaper to `wallpaper.png` if you like :3
 
 
 ### extra things:
 - laptop: 14 inch macbook pro 2021
-- OS: Fedora Workstation Asahi Remix 43 (with notched area rendering enabled)
+- distro: Fedora Workstation Asahi Remix 43
 - shell: DankMaterialShell
 - music player: Gapless
 - fetch thing(??): hyfetch + fastfetch

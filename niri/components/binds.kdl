@@ -5,6 +5,9 @@ binds {
 	XF86LaunchA repeat=false hotkey-overlay-title="Toggle niri Overview" { toggle-overview; }
     Mod+O repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
+	XF86Sleep repeat=false {
+		spawn "dms" "ipc" "call" "notifications" "toggleDoNotDisturb";
+	}
     
     // === Application Launchers ===
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
