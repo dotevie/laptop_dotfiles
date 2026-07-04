@@ -426,7 +426,7 @@
   "dockAutoHide": false,
   "dockSmartAutoHide": true,
   "dockUseOverlayLayer": false,
-  "dockGroupByApp": false,
+  "dockGroupByApp": true,
   "dockRestoreSpecialWorkspaceOnClick": false,
   "dockOpenOnOverview": false,
   "dockPosition": 1,
