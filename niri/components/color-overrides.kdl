@@ -1,5 +1,0 @@
-layout {
-    focus-ring {
-        inactive-color "#505050"
-    }
-}
