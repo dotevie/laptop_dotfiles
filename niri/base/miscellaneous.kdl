@@ -1,18 +1,34 @@
 config-notification {
     disable-failed
 }
+
 overview {
     workspace-shadow {
         off
     }
 }
+
 hotkey-overlay {
     skip-at-startup
 }
+
 prefer-no-csd 
+
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
 gestures {
     hot-corners {
         off
     }
 }
+
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
+}
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+spawn-at-startup "kdeconnectd"

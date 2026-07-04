@@ -1,0 +1,27 @@
+// seems like dms isnt 10000% good at figuring this out
+// so i will leave them here for now
+
+layer-rule {
+	background-effect {
+		xray false
+	}
+}
+
+window-rule {
+	background-effect {
+		xray false
+	}
+}
+
+// customize blur and pick windows for it to apply to
+
+blur {
+	noise 0.01
+	offset 1
+	passes 3
+}
+
+window-rule {
+	match app-id="com.mitchellh.ghostty"
+	background-effect { blur true; }
+}

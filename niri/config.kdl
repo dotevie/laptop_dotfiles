@@ -1,150 +1,47 @@
-/*
-    evelyn's niri+DMS config
+// evelyn's dotfiles, again
+// this is a bit of a reorganize and im hoping for it to be more maintainable :3
+// if you're going to install this on your system, i highly recommend reading through the entire thing first
 
-    config.kdl
-    ==========
-    this is the root config file that niri reads from.
-    feel free to write your config in this file, but i've decided to separate everything out.
-    everything here is commented with what it does, so i hope it's a good introduction to all this.
+// base niri stuff compartmentalized into different files to make it all neat
+// you shouldn't *have* to mess with any of this (except for environment maybe) but nothing's stopping you :3
+// if you make an improvement send patches!!! but no vibecoded slop please
+include "base/input.kdl"
 
-    KEEP IN MIND:
-    everything in the "components" folder is free to modify as you please.
-    everything in the "dms" folder can be overwritten by DMS and should be considered non-persistent.
-    
-    i recommend consulting the niri config documentation at https://yalter.github.io/niri/
-*/
+include "base/layout.kdl"
 
-/*
-    plays a startup sound.
-    looks in /usr/share/sounds/modern-minimal-ui-sounds-v1.1/stereo/desktop-login.oga
-    download what i used from https://www.gnome-look.org/p/2225430
-*/
-include "components/startup-sound.kdl"
+include "base/animations.kdl"
 
-/*
-    this is where your shell environment variables go.
-    anything shell-specific that doesn't live in your rc files should go here.
-*/
-include "components/environment.kdl"
+include "base/window-rules.kdl"
 
-/*
-    this is where i put startup spawns (e.g. DMS).
-    if you want something to start at login, put it here.
-*/
-include "components/spawns.kdl"
+include "base/miscellaneous.kdl"
 
-/*
-	DMS outputs, managed from the settings menu
-	do not touch, will be overwritten.
-*/
-include "dms/outputs.kdl"
+include "base/environment.kdl"
 
-/*
-    this is where rules for screen outputs go (e.g. scale, resolution, refresh rate, etc).
-    if you need to configure, add, or change any outputs, this is where to do that.
-    if you don't have the same laptop as me, you will need to do this.
-*/
-include "components/outputs-override.kdl"
+// EXTRA SETTINGS
 
-/*
-    this is where input device configuration lives.
-    if you want to mess with something like natural scroll, that goes here.
-*/
-include "components/input.kdl"
+// blur settings
+// for settings stuff (e.g. spread, passes) and choosing which apps get blur
+include "extra/blur-settings.kdl"
 
-/*
-    this is where animations live.
-    if you want to change timing, easing, or other animation options, that's here.
-*/
-include "components/animations.kdl"
-
-/*
-    this is where the layout (column widths, defaults, column centering) go.
-    these are good defaults, and you shouldn't need to change them, but feel free.
-*/
-include "components/layout.kdl"
-
-/*
-    these are the niri system keybinds.
-    anything declared here can be overridden in DMS, but you can also change them here instead if you like.
-*/
-include "components/binds.kdl"
-
-/*
-    this is where miscellaneous things are.
-    if you aren't sure where something should go (or it doesn't fit cleanly into another file), this isn't a bad place.
-*/
-include "components/miscellaneous.kdl"
-
-/*
-    DMS layout configuration.
-    configures things like corner radii.
-	don't touch this, any changes will be overwritten.
-*/
-include "dms/layout.kdl"
+// extra alt-tab settings
+// to make it look nice :3
+include "extra/alttab.kdl"
 
 
-/*
-    these are all of the window rules.
-    they control things like whether something opens floating, changing specific settings for specific windows, and things like that.
-    if you want to write your own window rules, i highly recommend consulting the niri documentation.
-*/
-include "components/rules.kdl"
-
-/*
-    DMS color configuration.
-    configures border and highlight colors based on your wallpaper.
-	don't touch this, any changes will be overwritten.
-*/
+// DMS base files
+// you shouldn't edit these, changes from DMS settings will overwrite them
 include "dms/colors.kdl"
 
-/*
-    color configuration overrides.
-    if you want something to be a different color than what DMS set, change it here.
-*/
-include "components/color-overrides.kdl"
+include "dms/layout.kdl"
 
-/*
-    layout configuration overrides.
-    if you want to change anything about the layout (e.g. panel gaps, corners), do it here.
-*/
-include "components/layout-overrides.kdl"
-
-/*
-    DMS binds configuration.
-    any binds configured or overwritten in the GUI live here.
-    despite the warning, should be fine to touch, just make sure you restart DMS (power menu + D) if you do.
-*/
-include "dms/binds.kdl"
-
-/*
-    DMS alt+tab picker configuration.
-    sets corner radii on the alt+tab picker.
-    don't touch this, any changes will be overwritten
-*/
 include "dms/alttab.kdl"
 
-/*
-    alt+tab picker configuration overrides.
-    if you want to mess with the alt+tab picker at all, you should do it here.
-*/
-include "components/alttab-overrides.kdl"
+include "dms/outputs.kdl"
 
-/*
-    DMS wallpaper blur configuration.
-    places the blurred wallpaper in the backdrop if you enable it in the GUI.
-	don't touch this, any changes will be overwritten
-*/
+include "dms/cursor.kdl"
+
 include "dms/wpblur.kdl"
 
-/*
-	DMS window rule configuration, managed in the settings menu
-	not recommended to touch, if you want to write your own window rules in text, do it in components/rules.kdl
-*/
-include "dms/windowrules.kdl"
-
-/*
-	DMS Xcursor configuration, managed in the settings menu
-	don't touch this, any changes will be overwritten
-*/
-include "dms/cursor.kdl"
+// keybinds are managed by DMS
+// you can also modify them from your text editor if you like
+include "dms/binds.kdl"

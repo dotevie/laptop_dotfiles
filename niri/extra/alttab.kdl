@@ -1,6 +1,7 @@
 recent-windows {
 	open-delay-ms 100
 	highlight {
+		//active-color "#FFB2B8"
 		active-color "#9bd595"
 		padding 18.5
 	}
